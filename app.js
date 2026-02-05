@@ -77,7 +77,7 @@ app.get('/api/v1/products', (req, res) => {
         }
     )
     result = result.splice(limit * (page - 1), limit)
-    res.status(404).send(result)
+    res.status(200).send(result)
 })
 
 
